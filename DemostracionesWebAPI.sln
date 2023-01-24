@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WSAlumnos", "WSAlumno\WSAlu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiLibros", "WebApiLibros\WebApiLibros.csproj", "{7AF63D7D-31CA-4EA6-B94E-8A1D198770E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiNorthWind", "WebApiNorthWind\WebApiNorthWind.csproj", "{D524EC20-D351-4AF6-A5D5-2925B7BF883B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiNorthWind", "WebApiNorthWind\WebApiNorthWind.csproj", "{D524EC20-D351-4AF6-A5D5-2925B7BF883B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiPubs", "WebApiPubs\WebApiPubs.csproj", "{93A16DA2-5634-433D-916C-CD6D329D6D53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiPubs", "WebApiPubs\WebApiPubs.csproj", "{93A16DA2-5634-433D-916C-CD6D329D6D53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

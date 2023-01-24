@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApiLibros.Data;
 
 namespace WebApiLibros.Migrations
 {
     [DbContext(typeof(DBLibrosContext))]
-    partial class DBLibrosContextModelSnapshot : ModelSnapshot
+    [Migration("20230124203336_validaciones")]
+    partial class validaciones
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +36,7 @@ namespace WebApiLibros.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaDeNacimiento")
-                        .HasColumnType("date");
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Nombre")
                         .IsRequired()

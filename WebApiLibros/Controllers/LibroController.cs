@@ -32,10 +32,7 @@ namespace WebApiLibros.Controllers
 
         public ActionResult<Libro> Get(int id)
         {
-            var libro = (from l in context.Libros
-                         where l.LibroId == id
-                         select l
-                           ).SingleOrDefault();
+            var libro = context.Libros.Include(l => l.Autor).SingleOrDefault(l => l.LibroId == id);
 
             return libro;
         }
